@@ -1,0 +1,29 @@
+.menu-items {
+   /* flex:7; */
+   width: 73%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+@media (max-width:1400px) and(min-width:1024px) {
+   .menu-items {
+      /* flex:7; */
+      width: 70%;
+   }
+   
+}
+@media (min-width:760px) and (max-width:1024px) {
+   .menu-items {
+      width: 100%;
+   }
+}
+
+@media (max-width:760px) {
+   .menu-items {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+}

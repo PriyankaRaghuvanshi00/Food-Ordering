@@ -1,0 +1,135 @@
+.card {
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   height: 180px;
+   border-radius: 15px;
+   margin: 10px;
+   justify-content: space-between;
+   cursor: pointer;
+   transition: all 200ms ease-in-out;
+}
+
+.card:hover{
+   transform: scale(1.08);
+}
+.image {
+   position: relative;
+   left: 30%;
+   margin-top: 2px;
+   background-color: transparent;
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 80px;
+   height: 80px;
+   justify-content: center;
+   border-radius: 40px;
+   box-shadow: -2px 10px 10px rgba(190, 190, 190, 0.849);
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+   padding: 5px 10px;
+   margin-bottom: 5px;
+}
+
+.info-title {
+   display: flex;
+   align-items: center;
+}
+
+.info-name {
+   font-weight: 400;
+   font-size: 14px;
+   margin-right: 10px;
+}
+
+.info-portion {
+   background-color: rgba(255, 255, 255, 0.712);
+   border-radius: 20px;
+   padding: 1px 10px;
+   font-weight: 600;
+   font-size: 12px;
+   color: rgba(128, 128, 128, 0.658);
+}
+
+.info-price {
+   font-weight: 600;
+}
+
+.upper-icons {
+   display: flex;
+   padding: 10px;
+   justify-content: space-between;
+   position: relative;
+}
+
+.upper-icon-rating {
+   display: flex;
+   color: white;
+   font-size: 12px;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   border-radius: 20px;
+   padding: 0px 1px;
+}
+
+.upper-icon-rating p {
+   padding-right: 5px;
+}
+
+.rating-icon {
+   font-size: small;
+   color: yellow;
+}
+
+.favourite-icon {
+   background-color: white;
+   border-radius: 50%;
+   padding: 2px;
+   cursor: pointer;
+   transition: all 200ms ease-in-out;
+}
+
+.favourite-icon:hover, .add-to-cart-icon:hover {
+   transform: scale(1.06);
+}
+
+.upper-icon-right-side {
+   display: flex;
+}
+
+.add-to-cart-icon {
+   /* background-color: white; */
+   border-radius: 50%;
+   padding: 2px;
+   cursor: pointer;
+   transition: all 200ms ease-in-out;
+   margin-right: 3px;
+   visibility: hidden;
+}
+
+@media (max-width:760px) {
+   .card {
+      width: 200px;
+      height: 190px;
+      border-radius: 15px;
+      margin: 5px 5px;
+   }
+   .add-to-cart-icon {
+visibility: visible;
+   }
+}
+@media (min-width:761px) and (max-width:1030px) {
+   .card {
+      width: 190px;
+      height: 190px;
+      border-radius: 15px;
+      margin: 5px 5px;
+   }
+   .add-to-cart-icon {
+visibility: visible;
+   }
+}

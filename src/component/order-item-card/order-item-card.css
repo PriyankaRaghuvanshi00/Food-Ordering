@@ -1,0 +1,106 @@
+.orderitemcard {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 200ms ease-in-out;
+   margin: 5px;
+}
+
+.ordercard-image {
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   width: 40px;
+   height: 50px;
+   border-radius: 20px;
+   box-shadow: -1px 10px 10px rgba(201, 199, 199, 0.719);
+}
+
+.ordercard-info {
+   display: flex;
+   flex-direction: column;
+}
+
+.ordercard-name {
+   font-size: 18px;
+   font-weight: 500;
+   margin-right: 4px;
+}
+
+.ordercard-portion {
+   font-size: 14px;
+   color: gray;
+   font-weight: 600;
+}
+
+.counter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5px;
+   width: 40px;
+   border: 1.5px solid rgb(31, 231, 31);
+   border-radius: 20px;
+}
+.closeIcon{
+   color: gray;
+   cursor: pointer;
+}
+
+.dec-counter,.inc-counter{
+   font-size: 16px;
+   font-weight: 600;
+   margin: 0px 2px;
+   text-align: center;
+   cursor: pointer;
+}
+.counter-value{
+   font-size: 13px;
+   font-weight: 600;
+}
+
+
+@media (max-width:1400px) and (min-width:1024px) {
+   .ordercard-image {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+   }
+}
+@media (min-width:290px) and (max-width:760px) {
+ 
+   .ordercard-image {
+      width: 45px;
+      height: 45px;
+   }
+   .counter {
+      padding: 0px 5px;
+      width: 40px;
+   }
+}
+
+@media (max-width:290px) {
+   
+   .ordercard-image {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+   }
+ 
+   .ordercard-name {
+      font-size: 16px;
+   }
+   
+   .ordercard-portion {
+      font-size: 12px;
+   }
+   
+   .counter {
+      padding: 0px 4px;
+      width: 35px;
+   }
+
+ 
+}

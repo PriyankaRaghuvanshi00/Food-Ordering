@@ -1,0 +1,211 @@
+.myorder-section {
+   /* flex: 3; */
+   width: 27%;
+   display: flex;
+   padding: 5px;
+   flex-direction: column;
+}
+.mobile-myorder-section{
+   min-width: 30vh;
+   max-height: 60vh;
+}
+   .dekstop-myorder-section{
+   height: 80vh;
+   transform: scale();
+   }
+.myorder-title {
+   padding: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.myorder-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 10px;
+   height: 100%;
+}
+
+.order-time p {
+   font-weight: 600;
+}
+
+.edit-button {
+   color: rgb(27, 224, 27);
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.time-icon {
+   background-color: rgba(29, 247, 156, 0.199);
+   color: rgba(8, 219, 8, 0.678);
+   border-radius: 10px;
+   padding: 1px 6px;
+   margin-right: 5px;
+}
+
+.order-time {
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.order-item {
+   border-top: 2px solid rgba(206, 205, 205, 0.582);
+   display: flex;
+   flex-direction: column;
+   padding-top: 20px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+max-height: 30vh;
+}
+
+.order-item::-webkit-scrollbar{
+   display: none;
+}
+
+.dragdrop-box {
+   width: 100%;
+   border: 2px dashed rgb(5, 231, 92);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(5, 231, 92);
+   font-size: 25px;
+   cursor: pointer;
+   margin-top: 10px;
+   max-height: 100px;
+   min-height: 100px;
+transition: all 200ms ease-in-out;
+}
+
+.dekstop-dragdrop-box:hover{
+   transform: scale(1.05);
+}
+.order-total {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.total {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.total h2, .total h3 {
+   font-size: 17px;
+}
+
+.total h3 {
+   font-weight: 500;
+}
+
+.checkout-button {
+   background-color: rgb(72, 206, 123);
+   color: rgba(255, 255, 255, 0.863);
+   padding: 5px;
+   font-size: 18px;
+   font-weight: 600;
+   border-radius: 20px;
+   width: 80%;
+   text-align: center;
+   cursor: pointer;
+}
+
+.mobile {
+   display: none;
+}
+
+.dekstop {
+   display: flex;
+}
+
+@media (min-width:760px) and (max-width:1024px) {
+   .mobile {
+      display: flex;
+   }
+   .dekstop {
+      display: none;
+      visibility: hidden;
+   }
+   .Modal {
+      width: 100vw;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.678);
+   }
+   .myorder-closeIcon {
+      cursor: pointer;
+      visibility: visible;
+   }
+   .myorder-section {
+      width: 80%;
+      background-color: white;
+      position: absolute;
+      top: 15%;
+   }
+   .order-total {
+      margin-top: 10px;
+   }
+   .total {
+      margin-bottom: 20px;
+   }
+   .order-time {
+      margin-bottom: 10px;
+
+   }
+}
+
+@media (max-width:1400px) and (min-width:1024px) {
+   .myorder-section {
+      width: 33%;
+   }
+}
+
+@media (max-width:760px) {
+   .mobile {
+      display: flex;
+   }
+   .dekstop {
+      display: none;
+      visibility: hidden;
+   }
+   .Modal {
+      width: 100vw;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.678);
+   }
+   .myorder-closeIcon {
+      cursor: pointer;
+      visibility: visible;
+   }
+   .myorder-section {
+      width: 80%;
+      background-color: white;
+      position: absolute;
+      top: 15%;
+   }
+   .order-total {
+      margin-top: 10px;
+   }
+   .total {
+      margin-bottom: 20px;
+   }
+   .order-time {
+      margin-bottom: 10px;
+   }
+}
