@@ -1,5 +1,5 @@
 # Food Ordering App
-![caption](https://github.com/PriyankaRaghuvanshi00/Food-Ordering/blob/main/Untitled.mp4)
+![Screen Recording](https://drive.google.com/file/d/1Wl-MFamABS7Pxc_8kC4Ncg4TAe-D0NBw/view?usp=sharing)
 ## Library and Packages Used
 ### @material ui/icons
 This package provides the Google Material icons packaged as a set of React components.
