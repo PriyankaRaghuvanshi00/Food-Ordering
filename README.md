@@ -1,5 +1,4 @@
 # Food Ordering App
-![Screen Recording](https://drive.google.com/file/d/1zeG5stN19XYlHwLC9CwAJ3aRBDhedyw1/view?usp=sharing)
 ## Library and Packages Used
 ### @material ui/icons
 This package provides the Google Material icons packaged as a set of React components.
